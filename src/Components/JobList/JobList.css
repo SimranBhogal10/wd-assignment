@@ -1,0 +1,18 @@
+.job-list {
+    padding: 20px;
+}
+
+.job-cards-container {
+/* display: flex;
+flex-wrap: wrap;
+width: calc(100% - 20px); */
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+
+@media (max-width: 768px) {
+.job-cards-container {
+    justify-content: center;
+}
+}

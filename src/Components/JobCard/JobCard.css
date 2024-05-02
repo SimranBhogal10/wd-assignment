@@ -1,0 +1,98 @@
+.job-card {
+    border: 0px solid #ccc;
+    border-radius: 40px;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .job-card h2 {
+    margin-bottom: 0px;
+  }
+  
+  .job-card p.company {
+    margin-bottom: -15px;
+  }
+
+  .job-card p.location {
+    margin-top: -15px;
+  }
+
+  .job-card p.salary {
+    margin-top: 20px;
+    color: gray;
+  }
+
+  .about-us-title{
+    margin-top: -20px;
+  }
+
+  .description-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .description {
+    color: #333;
+    transition: filter 0.3s ease; /* Apply transition for blur effect */
+  }
+  
+  .description-container.collapsed {
+    filter: blur(1px); /* Apply blur effect to collapsed description */
+  }
+  
+
+  .view-job {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: purple;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .posted{
+    display: inline-block;
+    padding: 7px;
+    border: 0px solid #ccc;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    font-size: 10px;
+  }
+
+  .job-card button {
+    display: block;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .apply-button{
+    font-size: 20px;
+    background-color: aquamarine;
+  }
+
+  .unlock-button{
+    font-size: 20px;
+    background-color: purple;
+    color: #fff;
+  }
+
+  .min-exp{
+    font-weight: bold;
+    margin-top: 20px;
+    color: gray;
+    word-spacing: 2px;
+  }
+
+  .exp{
+    font-weight: bold;
+    margin-top: -10px;
+  }
