@@ -16,3 +16,14 @@ gap: 2rem;
     justify-content: center;
 }
 }
+
+@media screen and (max-width: 1050px) {
+    .job-cards-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+@media screen and (max-width: 670px) {
+    .job-cards-container {
+      grid-template-columns: 1fr;
+    }
+}
