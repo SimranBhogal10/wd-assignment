@@ -1,0 +1,31 @@
+.search-filter{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.custom-search {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    margin-top: 10px;
+  }
+
+.custom-search:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
+
+@media screen and (max-width: 600px) {
+    .search-filter {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .custom-search {
+      max-width: 100%; 
+      margin-top: 10px;
+    }
+  }

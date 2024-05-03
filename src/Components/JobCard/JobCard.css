@@ -16,24 +16,17 @@
   .company-info {
     display: flex;
     align-items: center;
-    /* margin-bottom: 10px; */
 }
 
 .company-icon {
-    margin-right: 20px; /* Adjust spacing between icon and company details */
+    margin-right: 20px; 
 }
 
 .company-icon img {
-    width: 40px; /* Adjust icon width as needed */
-    height: 40px; /* Adjust icon height as needed */
-    border-radius: 50%; /* Ensure the icon is round */
-}
-
-/* Company details */
-/* .company-details {
-    /* flex-grow: 1;  */
-    /* margin: 0px; */
-/* } */ 
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+} 
   
   /* Company and location styles */
   .company {
