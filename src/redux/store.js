@@ -26,19 +26,16 @@ const jobSlice = createSlice({
       state.isLoading = false;
     },
     appendData(state, action) {
-    //   state.data.payload = state.data.payload.concat(action.payload);
       state.data.payload.jdList = state.data.payload.jdList.concat(action.payload);
     }
   }
 });
 
 
-// Export actions and reducer from the slice
 export const { fetchDataRequest, fetchDataSuccess, fetchDataFailure, appendData } = jobSlice.actions;
 export const selectJobData = (state) => state.job.data;
 
 
-// Configure store with the reducer from the slice
 const store = configureStore({
   reducer: jobSlice.reducer
 });

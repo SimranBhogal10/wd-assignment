@@ -23,9 +23,8 @@
       flex-direction: column; 
       align-items: center;
     }
-  
     .custom-search {
       max-width: 100%; 
       margin-top: 10px;
-    }
   }
+}

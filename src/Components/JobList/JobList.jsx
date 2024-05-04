@@ -36,7 +36,7 @@ const JobList = ({ filters }) => {
           ))}
         </div>
       ) : (
-        <div>No jobs found.</div>
+        <div className='no-job'>No jobs found.</div>
       )}
     </div>
   );

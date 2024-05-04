@@ -9,6 +9,11 @@ grid-template-columns: repeat(3, 1fr);
 gap: 2rem;
 }
 
+.no-job{
+  text-align: center;
+  color: gray;
+}
+
 @media (max-width: 768px) {
 .job-cards-container {
     justify-content: center;

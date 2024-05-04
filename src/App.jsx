@@ -1,5 +1,4 @@
-import React from 'react'
-import JobList from './Components/JobList/JobList';
+import React from 'react';
 import SearchFilter from './Components/SearchFilter/SearchFilter';
 
 function App() {

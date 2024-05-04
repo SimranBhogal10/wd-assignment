@@ -8,8 +8,8 @@ import { debounce } from 'lodash';
 
 
 const SearchFilter = () => {
-  const [limit, setLimit] = useState(21); // Number of items to fetch per request
-  const [offset, setOffset] = useState(0); // Starting index of the items to fetch
+  const [limit, setLimit] = useState(21); 
+  const [offset, setOffset] = useState(0); 
   const dispatch = useDispatch();
   const { data, error, isLoading } = useSelector(state => state);
   const [role, setRole] = useState([]);
@@ -19,12 +19,9 @@ const SearchFilter = () => {
   const [selectedFilters, setSelectedFilters] = useState({});
   const [searchTerm, setSearchTerm] = useState('');
 
-
-
   useEffect(() => {
     dispatch(fetchJobData(limit, offset));
   }, [dispatch, limit, offset]);
-
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +31,6 @@ const SearchFilter = () => {
         setOffset(offset + 1); // Increment offset to fetch more data
       }
     };
-
 
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -137,9 +133,7 @@ const SearchFilter = () => {
           placeholder='Search Company'
           value={searchTerm}
           onChange={(e) => handleSearch(e.target.value)} />
-
       </div>
-     
     </div>
     <div className="joblist">
     <JobList filters={selectedFilters} />

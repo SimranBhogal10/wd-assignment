@@ -1,4 +1,4 @@
-import { fetchDataRequest, fetchDataSuccess, fetchDataFailure } from './store.js';
+import { fetchDataSuccess } from './store.js';
 import { appendData } from './store.js'; // Import the appendData action creator
 
 
