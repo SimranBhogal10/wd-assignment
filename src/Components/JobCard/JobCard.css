@@ -58,28 +58,37 @@
   .about-us-title {
     margin-top: -20px;
   }
-  
-  /* Description container */
-  .description-container {
-    position: relative;
-    overflow: hidden;
+
+  .description-container{
+    margin-bottom: 10px;
   }
   
-  /* Description text */
   .description {
+    width: 350px;
+    /* margin-bottom: 10px; */
+    /* padding-bottom: 5px; */
+    text-decoration: none;
     line-height: 1.5;
+    max-height:250px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    content: "";
+    background: -webkit-linear-gradient(#000, #fff);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  }
+
+  .view-job{
+    position: absolute;
+    transform: translateX(200%);
+  }
+
+  .view-job a{
+    color: purple;
+    cursor: pointer;
+    text-decoration: none;
   }
   
-  /* View job link */
-  .view-job {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: purple;
-    text-decoration: none;
-    cursor: pointer;
-  }
   
   /* Posted timestamp */
   .posted {
@@ -103,19 +112,19 @@
   
   .apply-button {
     font-size: 20px;
-    background-color: aquamarine;
+    background-color: rgb(85, 239, 196);
   }
   
   .unlock-button {
     font-size: 20px;
-    background-color: purple;
+    background-color: #1a73e8;;
     color: #fff;
   }
   
   /* Minimum experience text */
   .min-exp {
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 50px;
     color: gray;
     word-spacing: 2px;
   }
@@ -123,7 +132,17 @@
   /* Experience text */
   .exp {
     font-weight: bold;
-    margin-top: -10px;
+    margin-top: -5px;
+  }
+
+  @media (max-width: 768px) {
+    .description {
+        width: 250px;
+    }
+    .view-job{
+      position: absolute;
+      transform: translateX(140%);
+    }
   }
   
   

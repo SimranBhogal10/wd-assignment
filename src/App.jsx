@@ -7,7 +7,6 @@ function App() {
     <div className="app">
       <h1>Job Board</h1>
       <SearchFilter />
-      <JobList />
     </div>
   );
 }

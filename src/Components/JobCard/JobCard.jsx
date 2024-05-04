@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './JobCard.css'
 
 const JobCard = ({ job }) => {
-    const [showDescription, setShowDescription] = useState(true);
 
     return (
         <div className="job-card">
@@ -20,15 +19,11 @@ const JobCard = ({ job }) => {
             <p className="salary">Estimated Salary: {job.maxJdSalary} LPA ✅</p>
             <h4 className='about-company'>About Company</h4>
             <p className='about-us-title'>About us</p>
-            <div>
+            <div className='description-container'>
                 <p className='description'>
-                    {showDescription ? job.jobDetailsFromCompany : ''}
+                    {job.jobDetailsFromCompany}
                 </p>
-                {/* {job.about_us.length > descriptionLimit && (
-                    <a href="#" className='view-job' onClick={toggleDescription}>
-                        {showDescription ? 'Hide Job' : 'View Job'}
-                    </a>
-                )} */}
+                <div className='view-job'><a href="#">View Job</a></div>          
             </div>
             <p className='min-exp'>Minimum Experience</p>
             <p className="exp">{job.minExp}-{job.maxExp}</p>
